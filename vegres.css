@@ -1,0 +1,175 @@
+/* ####********************************************************MEDIA QUERY */
+
+/* media query here  */
+
+@media (max-width : 991px){
+    html{
+        font-size: 55%;
+    }
+
+    /* navbar and header media */
+
+    .navigate_link{
+        margin-left: 1.5rem;
+    }
+
+    
+    /* categroy div */
+    .categroy_item_main_div{
+        flex-wrap: wrap;
+        padding:0rem 1rem;
+    }
+
+    /* blogs div */
+    .blogs_main_Scontent_div{
+        flex-wrap: wrap;
+    }
+
+    .common_blog_div{
+        margin-top: 1rem;
+    }
+
+    /* footer div */
+    .footer_div{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ################################ MEDIA 768############################### */
+
+@media (max-width : 768px){
+
+    /* navbar and header media */
+    .header{
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 50%;
+        background-color: #fff;
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border:0.2rem solid transparent;
+        border-radius: 0.5rem;
+    }
+
+    .navbar:hover{
+        border:0.2rem solid #130f40;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* menu */
+    .javascriptmenu{
+        right: 2rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navigate_link{
+        display: block;
+        margin-top: 1rem;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    /* searchbox */
+    .search_box{
+        width: 60%;
+    }
+
+    /* cart box here  */
+    .cartbox{
+        width: 60%;
+            
+    }
+
+    /* image banner media */
+    .imgbanner{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* feature media here  */
+
+    .feature_sub_div{
+        flex-wrap: wrap;
+    }
+
+    .service_div1{
+        margin-top: 1rem; 
+        width: 100%;
+    }
+
+    /* product div */
+    .product_item_common_div{
+        margin-top: 1rem;
+    }
+
+    /* icon menu class here  */
+    #menu_icon{
+        display: block;
+    }
+
+    /* category div */
+    .category_Common_item{
+        width: 100%;
+    }
+
+    /* blog div */
+    .common_blog_div{
+        width:100%;
+    }
+
+    /* footer div here  */
+    .copy_div{
+        text-align: center;
+    }
+
+}
+
+
+/* ########################### MEDIA 450############################ */
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    /* header navbar here */
+    .header{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* navbar here */
+    .navbar{
+        width: 65%;
+    }
+
+    /* searchbox */
+    .search_box{
+        width: 80%;
+    }
+
+    /* cart box here  */
+    .cartbox{
+        width: 80%;
+    }
+
+
+    /* feature div media  */
+    .service_div1{
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+
+    
+
+}

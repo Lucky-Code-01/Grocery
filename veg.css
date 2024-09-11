@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+/* ######################################logo animation ############# */
+.animation_logo_text{
+    display: inline-flex;
+    color: #c7f4ff;
+    font-family: "Play", sans-serif;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+}
+.ani1t{
+    animation-delay: 0.1s;
+}
+.ani2{
+    animation-delay: 0.2s;
+}
+.ani3{
+    animation-delay: 0.3s;
+}
+.ani4{
+    animation-delay: 0.4s;
+}
+.ani5{
+    animation-delay: 0.5s;
+}
+
+/* #####################################logo animation ends here  */
+
+
+
+
+
+/* <!-- ############################ NAVBAR START HERE ################# --> */
+
+/* header nav desgin here  */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo_div{
+    display: flex;
+    align-items: center;
+    gap:0.3rem;
+}
+
+.logo{
+    font-size: 3.2rem;
+    color: #ff7800;
+}
+
+.animation_logo_text{
+    font-size: 2.8rem;
+    margin-top: 0.8rem;
+    color: #130f40;
+    font-weight: 600;
+}
+
+.logo_text{
+    font-size: 2.8rem;
+    margin-top: 0.8rem;
+    color: #130f40;
+}
+
+.navigate_link{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #130f40;
+    margin-left: 2.5rem;
+}
+
+.navigate_link:hover{
+    color:#ff7800 ;
+    transition: 0.4s ease-in-out;
+}
+
+.menucontiner{
+    display: flex;
+    gap:0.5rem;
+}
+
+.common_menu_icon{
+    font-size: 2.5rem;
+    color: #130f40;
+    background-color: #EEEDED;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border : 0.2rem solid transparent;
+}
+
+#menu_icon{
+    display: none;
+}
+
+.common_menu_icon:hover{
+    background-color: #ff7800;
+    color: white;
+    border : 0.2rem solid #130f40;
+    transition: 0.3s ease-in-out;
+}
+
+/* search bar here  */
+.search_box{
+    width: 50rem;
+    box-shadow: var(--box-shadow);
+    border:2px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    border-radius: 0.5rem;
+}
+
+.search_box:hover{
+    border:0.2rem solid #130f40;
+    transition: 0.3s ease-in-out;
+}
+
+.searchbar{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.search_btn{
+    padding: 0rem 0.8rem;
+    font-size: 2rem;
+    border:none;
+    outline: none;
+    background-color: #ff7800;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/* now we code cart */
+.cartbox{
+    position: absolute;
+    top: 110%;
+    right:-110%;
+    width: 35rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border:0.2rem solid transparent;
+}
+
+.cartbox:hover{
+    border:0.2rem solid #130f40;
+    transition: 0.3s ease-in-out;
+}
+
+.cartitem_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.cartimg1{
+    width: 12rem;
+}
+
+.cartitem_text1{
+    color: #130f40;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.price_text{
+    color: gray;
+    font-size: 1.6rem;
+    margin-right: 0.5rem; 
+}
+
+.quantity_text{
+    color: gray;
+    font-size: 1.6rem;
+}
+
+
+.delte_icon{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* payment text */
+.paymentdiv{
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.payment_text{
+    color:#130f40;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.checkoutbtn{
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 2.4rem;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.checkoutbtn:hover{
+    background-color: #ff7800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* now we code for the user login  */
+.loginbox{
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 35rem;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    border: 0.2rem solid transparent;
+    padding: 1.2rem;
+}
+
+.loginbox:hover{
+    border:0.2rem solid #130f40;
+    transition: 0.3s ease-in-out;
+}
+
+
+.loginhead{
+    text-align: center;
+    font-size: 2.8rem;
+    color: #130f40;
+}
+
+.common_input_cls{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: #EEEDED;
+}
+
+.logintextbtn_div{
+    text-align: center;
+}
+
+.common_login_head{
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.loginbtn{
+    align-self: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: #fff;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: #130f40;
+    outline: none;
+}
+
+.loginbtn:hover{
+    background-color: #ff7800;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* <!-- ############################ NAVBAR ENDS HERE ################# --> */
+
+
+/* javascript class */
+.javascriptmenu{
+    right: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* mid section here  */
+.midsection{
+    background-color:#EEEDED;
+    width: 100%;
+}
+
+
+/* <!-- ############################# IMAGE BANNER START HERE ################ --> */
+
+/* now we make the bannner part of the webiste  */
+.imgbanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('banner-bg.webp');
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.bannertext{
+    color: #130f40;
+    text-align: center;
+}
+
+.bannerhead1{
+    font-size: 3rem;
+}
+
+.bannerdescription{
+    margin-top: 1rem;
+    line-height: 3rem;
+    color: gray;
+    font-size: 1.6rem;
+}
+
+.bannerbtn{
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: #130f40;
+    outline: none;
+}
+
+.bannerbtn:hover{
+    background-color: #ff7800;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* <!-- ############################# IMAGE BANNER ENDS HERE ################ --> */
+
+
+
+/* <!-- ############################ FEATURES START HERE ################### --> */
+
+/* now we make the features box  */
+.feature_div{
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.section_common_head{
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    z-index: -1;
+}
+
+.section_common_span{
+    font-size: 3rem;
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    background-color: #ff7800;
+}
+
+/* service box */
+.feature_sub_div{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.service_div1{
+    background-color: white;
+    color: #130f40;
+    padding: 2rem;
+    width: 38rem;
+    margin-left: 1rem;
+    outline: 1px solid lightgray;
+	outline-offset: -1rem;
+	transition: .2s linear;
+    border-radius: .5rem;
+    
+}
+
+.service_div1:hover{
+	transition: 0.5s ease;
+	outline: 1px solid black;
+	outline-offset: 0rem;
+}
+
+.service_img1{ 
+    height: 15rem;
+}
+
+.service_head1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.service_description{
+    color: gray;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.service_product_btn{
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: #130f40;
+    outline: none;
+}
+
+.service_product_btn:hover{
+    background-color: #ff7800;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* <!-- ############################ FEATURES ENDS HERE ################### --> */
+
+
+/* <!-- ############################### PRODUCT START HERE ############## --> */
+
+/* here we start the second box product here */
+.product_div{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.product_main_header{
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    z-index: -1;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.product_head_span{
+    font-size: 3rem;
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    background-color: #ff7800;
+}
+
+.product-slider{
+   padding:1rem;
+}
+
+.common_product_box{
+    outline: 1px solid lightgray;
+	transition: .2s linear;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    transition: .2s linear;
+}
+
+.common_product_box:hover{
+    transition: 0.5s ease;
+	outline: 1px solid black;
+	outline-offset: 0rem;
+}
+
+.product_item_common_img{
+    height: 20rem;
+}
+
+.p_i_c_heading{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #130f40;
+}
+
+.p_i_c_price{
+    color: gray;
+    font-size: 1.8rem;
+}
+
+.rating_div{
+    display: flex;
+    justify-content: center;
+    color: #ff7800;
+    font-size: 2rem;
+}
+
+/* <!-- ############################### PRODUCT ENDS HERE ############## --> */
+
+
+/* ############################### CATEGORY START HERE ################ */
+.category_div{
+    text-align: center;
+}
+
+.categroy_item_main_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.category_Common_item{
+    outline: 1px solid lightgray;
+    margin-left: 1rem;
+	transition: .2s linear;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    margin-top: 1rem;
+    outline-offset: -1rem;
+    transition: .2s linear;
+}
+
+.category_Common_item:hover{
+    transition: 0.5s ease;
+	outline: 1px solid black;
+	outline-offset: 0rem;
+}
+
+.common_cate_img{
+    height: 17rem;
+}
+
+.common_cate_head{
+    color: #130f40;
+}
+
+.common_cate_discount{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    color: gray;
+}
+
+/* ################################ CATEGORY ENDS HERE ############## */
+
+/* ################################ USER REVIEW START ################ */
+.userreview_div{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.review-slider{
+    padding: 1rem;
+}
+
+.common_review_box{
+    outline: 1px solid lightgray;
+	transition: .2s linear;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    transition: .2s linear;
+
+    
+}
+
+.common_review_box:hover{
+    transition: 0.5s ease;
+	outline: 1px solid black;
+	outline-offset: 0rem;
+}
+
+.common_review_user_img{
+    height: 12rem;
+    border-radius: 50rem;
+}
+
+.common_review_respons{
+    color: gray;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.common_review_uname{
+    color: #130f40;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+/* ################################# USER REVIEW ENDS ################ */
+
+/* <!-- ######################### BLOG SECTION START HERE ###############--> */
+
+.blogs_main_Scontent_div{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.common_blog_div{
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem 0rem #aaa;  
+    margin-left: 1rem;
+    width: 40rem;
+}
+
+.common_blog_img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.blog_post_info_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_blog_name_div,.user_publish_div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.user_blog_icon,.user_calendar{
+    color: #ff7800;
+    font-size: 1.8rem;
+}
+
+.user_b_name,.user_b_post{
+    font-size: 1.5rem;
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+.user_b_name:hover,.user_b_post:hover{
+    color: #130f40;
+    transition: 0.2s ease-in-out;
+}
+hr{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #ffffff;
+}
+
+.blogs_post_description_div{
+    line-height: 3rem;
+    padding: 2rem;
+}
+
+.common_blogs_head{
+    color: #130f40;
+    font-size: 2rem;
+}
+
+.common_blogs_description{
+    color: gray;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* <!-- ######################### BLOG SECTION ENDS HERE ###############--> */
+
+
+/* ##################################### FOOTER START HERE ###################*/
+
+.footer_main_div{
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.footer_div{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_content_div1,.footer_content_div2,.footer_content_div3,.footer_content_div4{
+    width: 30rem;
+    padding: 2rem;
+}
+
+.footer_logo_div{
+    display: flex;
+    align-items: center;
+}
+
+.company_des{
+    line-height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.social_media_div{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 3rem;
+    margin-left: -1rem;
+}
+
+.common_socail_i{
+    background-color: #EEEDED;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.common_socail_i:hover{
+    color: white;
+    background-color: #ff7800;
+    transition: 0.3s ease-in-out;
+}
+
+/* footer content2 */
+.contact_info_div,.contact_link_div,.content_email_div{
+    margin-top: 2rem;
+}
+
+.common_contact_info,.common_contact-link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 2rem;
+}
+
+.c_phone{
+    color: #ff7800;
+    font-size: 2.5rem;
+}
+
+.c_phone_no{
+    font-size: 1.6rem;
+    color: gray;
+    margin-left: 0.3rem;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.c_phone_no:hover{
+    padding-left: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.email_head{
+    font-size: 1.6rem;
+    color: gray;
+}
+
+.subscribe_from{
+    margin-top: 2rem;
+}
+
+.subscribe{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: #EEEDED;
+}
+
+.payment_img{
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+.copy_div{
+    display: flex;
+    padding: 2rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.copyrighttext{
+    color: gray;
+}
+
+.capyright_span{
+    color: #ff7800;
+}
+
+/* ###################################### FOOTER ENDS HERE ################# */

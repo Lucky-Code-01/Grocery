@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veggroco</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="veg.css">
+    <link rel="stylesheet" href="vegres.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+<!-- ############################ NAVBAR START HERE ################# -->
+
+    <!-- first we create the header and navbar  -->
+    <div class="header">
+        <!-- image and logo div -->
+        <div class="logo_div">
+            <i class='bx bxs-basket logo'></i>
+            <!-- <h3 class="logo_text">Groco</h3> -->
+            <span class="animation_logo_text ani1">G</span>
+            <span class="animation_logo_text ani2">r</span>
+            <span class="animation_logo_text ani3">o</span>
+            <span class="animation_logo_text ani4">c</span>
+            <span class="animation_logo_text ani5">o</span>
+
+        </div>
+
+        <!-- navabar here  -->
+        <div class="navbar">
+            <a href="#Home" class="navigate_link">Home</a>
+            <a href="#Features" class="navigate_link">Features</a>
+            <a href="#Product" class="navigate_link">Products</a>
+            <a href="#Categories" class="navigate_link">Categories</a>
+            <a href="#Review" class="navigate_link">Review</a>
+            <a href="#Blogs" class="navigate_link">Blogs</a>
+        </div>
+
+        <!-- menuicon here -->
+        <div class="menucontiner">
+            <i class='bx bx-menu common_menu_icon ' id="menu_icon"></i>
+            <i class='bx bx-search common_menu_icon searchicon'></i>
+            <i class='bx bxs-cart-alt common_menu_icon carticon'></i>
+            <i class='bx bxs-user common_menu_icon loginicon'></i>
+        </div>
+
+        <!-- now we make the search bar for search -->
+        <form action="" class="search_box">
+            <input type="text" class="searchbar" placeholder="Search Here...">
+            <button class="search_btn"><i class='bx bx-search'></i></button>
+        </form>
+
+        <!-- now we make the cart for user -->
+        <div class="cartbox">
+            <!-- item 1 -->
+            <div class="cartitem_box">
+                <img src="cart-img-1.png" class="cartimg1">
+                <div class="pricediv" style="display: block;">
+                    <p class="cartitem_text1">watermelon</p>
+                    <span class="price_text">$4.99/-</span>
+                    <span class="quantity_text">Qty : 1</span>
+                </div>
+                <i class='bx bxs-message-square-x delte_icon'></i>
+            </div>
+            <!-- items 2 -->
+            <div class="cartitem_box">
+                <img src="cart-img-2.png" class="cartimg1">
+                <div class="pricediv" style="display: block;">
+                    <p class="cartitem_text1">Onion</p>
+                    <span class="price_text">$3.45/-</span>
+                    <span class="quantity_text">Qty : 5</span>
+                </div>
+                <i class='bx bxs-message-square-x delte_icon'></i>
+            </div>
+            <!-- items 3 -->
+            <div class="cartitem_box">
+                <img src="cart-img-3.png" class="cartimg1">
+                <div class="pricediv" style="display: block;">
+                    <p class="cartitem_text1">chicken</p>
+                    <span class="price_text">$10.99/-</span>
+                    <span class="quantity_text">Qty : 3</span>
+                </div>
+                <i class='bx bxs-message-square-x delte_icon'></i>
+            </div>
+
+            <!-- div for the total price and button -->
+            <div class="paymentdiv">
+                <p class="payment_text">Total:- <span class="total_price">$18.56</span></p>
+                <button class="checkoutbtn">Checkout</button>
+            </div>
+        </div>
+
+        <!-- now we make the user login form -->
+        <div class="loginbox">
+            <h2 class="loginhead">LOGIN NOW</h2>
+            <form action="" class="loginform">
+
+                <!-- inputs -->
+                <input type="text" placeholder="Your Email" class="common_input_cls">
+                <input type="password" placeholder="Your Password" class="common_input_cls" style="margin-top: 1rem;">
+
+                <!-- btntextdiv -->
+                <div class="logintextbtn_div">
+                    <!-- heads -->
+                    <p class="common_login_head">Forget Your Password <a href="#">Click Here</a></p>
+                    <p class="common_login_head">Dont'Have An Account <a href="#">Create Now</a></p>
+
+                    <!-- buttons -->
+                    <button class="loginbtn">Login Now</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- here the ends of header section -->
+
+<!-- ################################ NAVBAR ENDS HERE ############# -->
+
+
+
+    <!-- mid section of the website here using for color -->
+    <div class="midsection"  id="Home">
+
+
+
+
+<!-- ############################# IMAGE BANNER ENDS HERE ################ -->
+
+        <!-- now we make the banner part of the website -->
+        <div class="imgbanner">
+            <!-- banner text div here  -->
+            <div class="bannertext">
+                <h1 class="bannerhead1">Fresh And <span style="color: #ff7800;">Organic </span>Products For Your</h1>
+                <p class="bannerdescription">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Aliquam<br>Libero
+                    Nostrum Veniam Facere Tempore Nisi.</p>
+                <button class="bannerbtn">Shop Now</button>
+            </div>
+        </div>
+        <!-- image banner of the website is ends  -->
+
+<!-- ######################### IMAGE BANNER START HERE ################# -->
+
+
+
+<!-- ############################ FEATURES START HERE ################### -->
+
+        <!-- now we make the features section of the website -->
+        <div class="feature_div" id="Features">
+            <h1 class="section_common_head">Our <span class="section_common_span">Features</span></h1>
+            <!-- feature section div -->
+            <div class="feature_sub_div">
+                <!-- feature service div1 -->
+                <div class="service_div1">
+                    <img src="feature-img-1.png" alt="" class="service_img1">
+                    <p class="service_head1">Fesh And Organic</p>
+                    <p class="service_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="service_product_btn">Read More</button>
+                </div>
+
+                <!-- feature service div2 -->
+                <div class="service_div1">
+                    <img src="feature-img-2.png" alt="" class="service_img1">
+                    <p class="service_head1">Free Delivery</p>
+                    <p class="service_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="service_product_btn">Read More</button>
+                </div>
+
+                <!-- feature service div3 -->
+                <div class="service_div1">
+                    <img src="feature-img-3.png" alt="" class="service_img1">
+                    <p class="service_head1">Easy Payments</p>
+                    <p class="service_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="service_product_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- features box ends here  -->
+
+<!-- ################################ FEATURES ENDS HERE ################### -->
+
+
+<!-- ############################### PRODUCT START HERE ############## -->
+
+        <!-- now we make the product slider  -->
+        <div class="product_div" id="Product">
+            <!-- product header -->
+            <h1 class="product_main_header">Our <span class="product_head_span">Products</span></h1>
+
+            <!-- product middle part 1 slider -->
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper mainslider">
+
+                    <!-- first product div1 -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-1.png" alt="orange" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Orange</p>
+                        <span class="p_i_c_price">$4.99/--10.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+                    <!-- product box second -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-2.png" alt="onion" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Onion</p>
+                        <span class="p_i_c_price">$3.99/--100.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                    <!-- product box third -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-3.png" alt="Spinach" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Spinach</p>
+                        <span class="p_i_c_price">$6.99/--15.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                    <!-- product box four -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-4.png" alt="cabbage" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Cabbage</p>
+                        <span class="p_i_c_price">$9/--13.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- product middle part 2 slider -->
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper mainslider">
+
+                    <!-- first product div5 -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-5.png" alt="orange" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Potato</p>
+                        <span class="p_i_c_price">$1/--2.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+                    <!-- second product div 6 -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-6.png" alt="onion" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Avocado</p>
+                        <span class="p_i_c_price">$20/--40/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                    <!-- product div 7 -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-7.png" alt="meet" class="product_item_common_img">
+                        <p class="p_i_c_heading">Fresh Carrot</p>
+                        <span class="p_i_c_price">$2.99/--4.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                    <!-- product div 8 -->
+                    <div class="swiper-slide common_product_box">
+                        <img src="product-8.png" alt="cabbage" class="product_item_common_img">
+                        <p class="p_i_c_heading">Green Lemon</p>
+                        <span class="p_i_c_price">$19/--30.9/-</span>
+                        <div class="rating_div">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="service_product_btn">Add To Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- product slider ends here  -->
+
+<!-- ################################ PRODUCT ENDS HERE ############## -->
+
+
+<!-- ################################ CATEGORY START HERE ############# -->
+        <div class="category_div" id="Categories">
+            <!-- product header -->
+            <h1 class="section_common_head">Our <span class="section_common_span">Categories</span></h1>
+
+            <!-- categroy main div -->
+            <div class="categroy_item_main_div">
+                <!-- categroy 1 -->
+                <div class="category_Common_item">
+                    <img src="cat-1.png" alt="" class="common_cate_img">
+                    <h1 class="common_cate_head">Vegitables</h1>
+                    <p class="common_cate_discount">Upto 45% Off</p>
+                    <button class="service_product_btn">Shop Now</button>
+                </div>
+                <!-- category 2 -->
+                <div class="category_Common_item">
+                    <img src="cat-2.png" alt="" class="common_cate_img">
+                    <h1 class="common_cate_head">Fresh Fruits</h1>
+                    <p class="common_cate_discount">Upto 45% Off</p>
+                    <button class="service_product_btn">Shop Now</button>
+                </div>
+                <!-- categroy 3 -->
+                <div class="category_Common_item">
+                    <img src="cat-3.png" alt="" class="common_cate_img">
+                    <h1 class="common_cate_head">Dairy Products</h1>
+                    <p class="common_cate_discount">Upto 45% Off</p>
+                    <button class="service_product_btn">Shop Now</button>
+                </div>
+                <!-- categroy 4 -->
+                <div class="category_Common_item">
+                    <img src="cate-4.png" alt="" class="common_cate_img">
+                    <h1 class="common_cate_head">Grocery</h1>
+                    <p class="common_cate_discount">Upto 55% Off</p>
+                    <button class="service_product_btn">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+
+<!-- ################################ CATEGORY ENDS HERE ############# -->
+
+<!-- ################################ USER REVIEW START ############## -->
+        <div class="userreview_div" id="Review">
+            <!-- userreview header -->
+            <h1 class="product_main_header">Customer's <span class="product_head_span">Review</span></h1>
+
+            <!-- now we make the review slider -->
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+
+                    <!-- review slider1-->
+                    <div class="swiper-slide common_review_box">
+                        <img src="pic-1.png" alt="" class="common_review_user_img">
+                        <p class="common_review_respons">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Unde Sunt Fugiat Dolore Ipsum Id Est Maxime Ad Tempore Quasi Tenetur.</p>
+                        <h1 class="common_review_uname">Jhon Van</h1>
+                        <div class="rating_div" style="margin-top: 1rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    </div>
+
+                    <!-- review slider2-->
+                    <div class="swiper-slide common_review_box">
+                        <img src="pic-2.png" alt="" class="common_review_user_img">
+                        <p class="common_review_respons">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Unde Sunt Fugiat Dolore Ipsum Id Est Maxime Ad Tempore Quasi Tenetur.</p>
+                        <h1 class="common_review_uname">Lensi Sen</h1>
+                        <div class="rating_div" style="margin-top: 1rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    </div>
+
+                    <!-- review slider3-->
+                    <div class="swiper-slide common_review_box">
+                        <img src="pic-3.png" alt="" class="common_review_user_img">
+                        <p class="common_review_respons">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Unde Sunt Fugiat Dolore Ipsum Id Est Maxime Ad Tempore Quasi Tenetur.</p>
+                        <h1 class="common_review_uname">Averal</h1>
+                        <div class="rating_div" style="margin-top: 1rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    </div>
+
+                    <!-- review slider4-->
+                    <div class="swiper-slide common_review_box">
+                        <img src="pic-4.png" alt="" class="common_review_user_img">
+                        <p class="common_review_respons">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Unde Sunt Fugiat Dolore Ipsum Id Est Maxime Ad Tempore Quasi Tenetur.</p>
+                        <h1 class="common_review_uname">Quliy Daccer</h1>
+                        <div class="rating_div" style="margin-top: 1rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+<!-- ############################### USER REVIEW ENDS ################ -->
+
+<!-- ######################### BLOG SECTION ENDS HERE ###################-->
+        <div class="blogs_div" id="Blogs">
+             <!-- Blogs header -->
+             <h1 class="product_main_header">Our <span class="product_head_span">Blogs</span></h1>
+
+            <div class="blogs_main_Scontent_div">
+                <!-- blogs first div here  -->
+                <div class="common_blog_div">
+                    <img src="blog-1.jpg" alt="" class="common_blog_img">
+
+                    <!-- blog post info div -->
+                    <div class="blog_post_info_div">
+                        <!-- user name info -->
+                        <div class="user_blog_name_div">
+                            <i class='bx bxs-user user_blog_icon'></i>
+                            <span class="user_b_name">Jhon Cena</span>
+                        </div>
+                        <!-- user publish blog info -->
+                        <div class="user_publish_div">
+                            <i class='bx bxs-calendar user_calendar'></i>
+                            <span class="user_b_post">1st May,2021</span>
+                        </div>
+                    </div>
+                    <!-- blogs post info div ends here -->
+                    <hr>
+                    <div class="blogs_post_description_div">
+                        <h1 class="common_blogs_head">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="common_blogs_description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <button  class="service_product_btn" style="margin-top: 1rem;">Read More</button>
+                    </div>
+                </div>
+
+                <!-- blogs second div here  -->
+                <div class="common_blog_div">
+                    <img src="blog-2.jpg" alt="" class="common_blog_img">
+
+                    <!-- blog post info div -->
+                    <div class="blog_post_info_div">
+                        <!-- user name info -->
+                        <div class="user_blog_name_div">
+                            <i class='bx bxs-user user_blog_icon'></i>
+                            <span class="user_b_name">Jhon Cena</span>
+                        </div>
+                        <!-- user publish blog info -->
+                        <div class="user_publish_div">
+                            <i class='bx bxs-calendar user_calendar'></i>
+                            <span class="user_b_post">1st May,2021</span>
+                        </div>
+                    </div>
+                    <!-- blogs post info div ends here -->
+                    <hr>
+                    <div class="blogs_post_description_div">
+                        <h1 class="common_blogs_head">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="common_blogs_description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <button  class="service_product_btn" style="margin-top: 1rem;">Read More</button>
+                    </div>
+                </div>
+
+                <!-- blogs third div here  -->
+                <div class="common_blog_div">
+                    <img src="blog-3.jpg" alt="" class="common_blog_img">
+
+                    <!-- blog post info div -->
+                    <div class="blog_post_info_div">
+                        <!-- user name info -->
+                        <div class="user_blog_name_div">
+                            <i class='bx bxs-user user_blog_icon'></i>
+                            <span class="user_b_name">Jhon Cena</span>
+                        </div>
+                        <!-- user publish blog info -->
+                        <div class="user_publish_div">
+                            <i class='bx bxs-calendar user_calendar'></i>
+                            <span class="user_b_post">1st May,2021</span>
+                        </div>
+                    </div>
+                    <!-- blogs post info div ends here -->
+                    <hr>
+                    <div class="blogs_post_description_div">
+                        <h1 class="common_blogs_head">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="common_blogs_description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <button  class="service_product_btn" style="margin-top: 1rem;">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- ########################## BLOG SECTION ENDS HERE ################ -->
+
+<!-- ############################ FOOTER SECTION START HERE ############### -->
+        <div class="footer_main_div">
+            <div class="footer_div">
+                <!-- footer_content_div_1 -->
+                <div class="footer_content_div1">
+                    <!-- footer logo div -->
+                    <div class="footer_logo_div">
+                        <h1 class="footer_logo_head logo_text">Groco</h1>
+                        <i class='bx bxs-basket logo'></i>
+                    </div>
+
+                    <p class="company_des">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Aliquam, Saepe.</p>
+
+                    <!-- social meida div -->
+                    <div class="social_media_div">
+                        <i class='bx bxl-facebook common_socail_i'></i>
+                        <i class='bx bxl-twitter common_socail_i'></i>
+                        <i class='bx bxl-instagram common_socail_i'></i>
+                        <i class='bx bxl-linkedin-square common_socail_i'></i>
+                    </div>
+                </div>
+
+                <!-- footer_content_div_2 -->
+                <div class="footer_content_div2">
+                    <h1 class="footer_2_head logo_text">Contact_info</h1>
+                    <!-- contact_info_div -->
+                    <div class="contact_info_div">
+                        <!-- contact_info_1 -->
+                        <div class="common_contact_info">
+                            <i class='bx bxs-phone c_phone'></i>
+                            <p class="c_phone_no">+123-456-789</p>
+                        </div>
+                        <!-- contact_info_2 -->
+                        <div class="common_contact_info">
+                            <i class='bx bxs-phone c_phone'></i>
+                            <p class="c_phone_no">+111-222-333</p>
+                        </div>
+                        <!-- contact_info_3 -->
+                        <div class="common_contact_info">
+                            <i class='bx bxs-envelope c_phone'></i>
+                            <p class="c_phone_no">Gujjarking@Gamil.Com</p>
+                        </div>
+                        <!-- contact_info_4 -->
+                        <div class="common_contact_info">
+                            <i class='bx bxs-edit-location c_phone'></i>
+                            <p class="c_phone_no">Washington,America-01</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer_content_div_3 -->
+                <div class="footer_content_div3">
+                    <h1 class="footer_2_head logo_text">Qucik Links</h1>
+                    <!-- content link divs here  -->
+                    <div class="contact_link_div">
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Home" class="c_phone_no">Home</a>
+                        </div>
+
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Features" class="c_phone_no">Features</a>
+                        </div>
+
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Product" class="c_phone_no">Products</a>
+                        </div>
+
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Categories" class="c_phone_no">Categories</a>
+                        </div>
+
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Review" class="c_phone_no">Review</a>
+                        </div>
+
+                        <div class="common_contact-link">
+                            <i class='bx bx-right-arrow-alt c_phone'></i>
+                            <a href="#Blogs" class="c_phone_no">Blogs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer_contnet_div_4 -->
+                <div class="footer_content_div4">
+                    <h1 class="logo_text">Newsletter</h1>
+
+                    <div class="content_email_div">
+                        <p class="email_head">Subscribe For Latest Updates</p>
+                        <form action="" class="subscribe_from">
+                            <input type="text" class="subscribe" placeholder="your email"><br>
+                            <button class="service_product_btn">Subscribe</button>
+                        </form>
+                        <img src="payment.png" alt="payment" class="payment_img">
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <!-- now we make the last copy right section -->
+            <div class="copy_div">
+                <p class="copyrighttext">Created By <span class="capyright_span"> Mr. Laxman Web Designer</span> | All Rights Reserved 2023</p>
+                
+            </div>
+        </div>
+        
+<!-- ############################ FOOTER END HERE ######################## -->
+
+
+    <!-- This bottom div is mid section div which was used to bg color gray -->
+    </div>
+
+
+
+    <!-- link for swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- js file link -->
+    <script src="veg.js"></script>
+</body>
+
+</html>
