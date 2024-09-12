@@ -343,7 +343,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('banner-bg.webp');
+    background-image: url('./Image/banner-bg.webp');
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
